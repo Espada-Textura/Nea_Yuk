@@ -1,6 +1,5 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
-#include "QString"
 #include <QGraphicsDropShadowEffect>
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
