@@ -29,6 +29,10 @@ private slots:
 
     void on_login_clicked();
 
+    void on_btexit_clicked();
+
+    void on_btexit_main_clicked();
+
 private:
     Ui::MainWindow *ui;
     dashbaord * Dashbaord;

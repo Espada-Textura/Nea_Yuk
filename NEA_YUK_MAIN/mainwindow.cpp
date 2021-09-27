@@ -20,21 +20,18 @@ MainWindow::MainWindow(QWidget *parent)
 
     ui->frame_menu_in->setGraphicsEffect(effect);
     Login = new login(this);
-    Dashbaord = new dashbaord(this);
-    Dashbaord->setGeometry(220,0,1800,1010);
     Class_panel = new class_panel(this);
-    Class_panel->setGeometry(220,0,1800,1010);
+    Class_panel->setGeometry(220,20,1800,1010);
     Account = new account(this);
-    Account->setGeometry(220,0,1800,1010);
+    Account->setGeometry(220,20,1800,1010);
+    Dashbaord = new dashbaord(this);
+    Dashbaord->setGeometry(220,20,1800,1010);
 }
 
 MainWindow::~MainWindow()
 {
     delete ui;
 }
-
-
-
 
 
 void MainWindow::on_btDashbaord_clicked()
@@ -64,5 +61,17 @@ void MainWindow::on_btClass_clicked()
 void MainWindow::on_login_clicked()
 {
     Login->show();
+}
+
+
+void MainWindow::on_btexit_clicked()
+{
+    this->close();
+}
+
+
+void MainWindow::on_btexit_main_clicked()
+{
+    this->close();
 }
 

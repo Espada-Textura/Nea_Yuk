@@ -78,8 +78,8 @@ font-size: 28px;</string>
      <rect>
       <x>30</x>
       <y>70</y>
-      <width>1651</width>
-      <height>921</height>
+      <width>1260</width>
+      <height>740</height>
      </rect>
     </property>
     <property name="maximumSize">
@@ -202,6 +202,115 @@ font-size: 12px;</string>
       <string>Showing</string>
      </property>
     </widget>
+    <widget class="QTableWidget" name="tableWidget">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>80</y>
+       <width>1201</width>
+       <height>631</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QWidget
+{
+    background-color: #333333;
+    color: #fffff8;
+}
+
+QHeaderView::section
+{
+    background-color: #646464;
+    padding: 4px;
+    font-size: 14pt;
+    border-style: none;
+    border-bottom: 1px solid #fffff8;
+    border-right: 1px solid #fffff8;
+}
+
+QHeaderView::section:horizontal
+{
+    border-top: 1px solid #fffff8;
+}
+
+QHeaderView::section:vertical
+{
+    border-left: 1px solid #fffff8;
+}
+*/
+
+QHeaderView::section
+{
+    background-color: #FCFCFC;
+    padding: 4px;
+    font: italic large &quot;Times New Roman&quot;;
+    border-style: none;
+    border-bottom: 1px solid #BCBCBC;
+    border-right: 1px solid  #BCBCBC;
+}
+
+QHeaderView::section:checked
+{
+    background-color: #009507;
+    font: bold italic;
+}
+
+QTableView
+{
+    gridline-color: #BCBCBC;
+    font-size: 12pt;
+    font: bold italic large &quot;Times New Roman&quot;;
+}
+
+QTableView QTableCornerButton::section
+{
+    background-color: #FCFCFC;
+    border: 1px solid #BCBCBC;
+}
+
+QTableView::item::selected
+{
+    selection-background-color: #E6FFBF;
+    selection-color:black;
+}
+
+QTableView::item::hover
+{
+    background-color: #C8EDFF;
+    selection-color:black;
+}</string>
+     </property>
+     <row>
+      <property name="text">
+       <string>1</string>
+      </property>
+     </row>
+     <column>
+      <property name="text">
+       <string>ID</string>
+      </property>
+     </column>
+    </widget>
+   </widget>
+   <widget class="QFrame" name="frame">
+    <property name="geometry">
+     <rect>
+      <x>1300</x>
+      <y>70</y>
+      <width>691</width>
+      <height>741</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 0);
+</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
    </widget>
   </widget>
  </widget>

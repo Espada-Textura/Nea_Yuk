@@ -47,7 +47,7 @@ border-bottom-right-radius: 30px;
        <x>0</x>
        <y>0</y>
        <width>200</width>
-       <height>1001</height>
+       <height>851</height>
       </rect>
      </property>
      <property name="styleSheet">
@@ -69,7 +69,9 @@ border-bottom-right-radius: 30px;
        </rect>
       </property>
       <property name="styleSheet">
-       <string notr="true"/>
+       <string notr="true">QPushButton{
+	text-align: left;
+}</string>
       </property>
       <property name="frameShape">
        <enum>QFrame::StyledPanel</enum>
@@ -106,6 +108,9 @@ border-bottom-right-radius: 30px;
        </item>
        <item>
         <widget class="QPushButton" name="btAccount">
+         <property name="styleSheet">
+          <string notr="true"/>
+         </property>
          <property name="text">
           <string>Account</string>
          </property>
@@ -120,28 +125,54 @@ border-bottom-right-radius: 30px;
        </item>
        <item>
         <widget class="QPushButton" name="login">
+         <property name="styleSheet">
+          <string notr="true"/>
+         </property>
          <property name="text">
           <string>show login</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="btexit">
+         <property name="text">
+          <string>Exit</string>
          </property>
         </widget>
        </item>
       </layout>
      </widget>
     </widget>
+    <widget class="QPushButton" name="btexit_main">
+     <property name="geometry">
+      <rect>
+       <x>1480</x>
+       <y>0</y>
+       <width>80</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(170, 0, 0);</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset resource="image.qrc">
+       <normaloff>:/image/icon/image/icon/x-circle-fill.svg</normaloff>:/image/icon/image/icon/x-circle-fill.svg</iconset>
+     </property>
+    </widget>
    </widget>
   </widget>
-  <widget class="QMenuBar" name="menubar">
-   <property name="geometry">
-    <rect>
-     <x>0</x>
-     <y>0</y>
-     <width>1920</width>
-     <height>20</height>
-    </rect>
+  <action name="actionExit">
+   <property name="text">
+    <string>Exit</string>
    </property>
-  </widget>
-  <widget class="QStatusBar" name="statusbar"/>
+  </action>
  </widget>
- <resources/>
+ <resources>
+  <include location="image.qrc"/>
+ </resources>
  <connections/>
 </ui>

@@ -1,3 +1,5 @@
 <RCC>
-    <qresource prefix="/image"/>
+    <qresource prefix="/image/icon">
+        <file>image/icon/x-circle-fill.svg</file>
+    </qresource>
 </RCC>
