@@ -135,6 +135,9 @@ border-bottom-right-radius: 30px;
        </item>
        <item>
         <widget class="QPushButton" name="btexit">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(85, 255, 255);</string>
+         </property>
          <property name="text">
           <string>Exit</string>
          </property>
