@@ -63,14 +63,31 @@ border-bottom-right-radius: 30px;
       <property name="geometry">
        <rect>
         <x>0</x>
-        <y>80</y>
+        <y>100</y>
         <width>201</width>
-        <height>141</height>
+        <height>321</height>
        </rect>
       </property>
+      <property name="font">
+       <font>
+        <family>Roboto</family>
+       </font>
+      </property>
       <property name="styleSheet">
-       <string notr="true">QPushButton{
+       <string notr="true">
+QPushButton{
+    background-color: #fff;
 	text-align: left;
+	color: #293269;
+	font: 75 14pt &quot;Roboto&quot;;
+}
+
+QPushButton:hover {
+    color: #171e4d;
+}
+
+QPushButton:pressed {
+    color:#399672;
 }</string>
       </property>
       <property name="frameShape">
@@ -81,7 +98,21 @@ border-bottom-right-radius: 30px;
       </property>
       <layout class="QVBoxLayout" name="verticalLayout">
        <item>
+        <widget class="QLabel" name="lableInformation">
+         <property name="styleSheet">
+          <string notr="true">font: 100 12pt &quot;Roboto&quot;;
+color:#293169;</string>
+         </property>
+         <property name="text">
+          <string>Information</string>
+         </property>
+        </widget>
+       </item>
+       <item>
         <widget class="QPushButton" name="btDashbaord">
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
          <property name="autoFillBackground">
           <bool>false</bool>
          </property>
@@ -89,11 +120,11 @@ border-bottom-right-radius: 30px;
           <string notr="true"/>
          </property>
          <property name="text">
-          <string>Dashbaord</string>
+          <string>   Dashbaord</string>
          </property>
          <property name="icon">
-          <iconset>
-           <normaloff>:/image/home.png</normaloff>:/image/home.png</iconset>
+          <iconset resource="image.qrc">
+           <normaloff>:/image/icon/image/icon/grid-1x2-fill.svg</normaloff>:/image/icon/image/icon/grid-1x2-fill.svg</iconset>
          </property>
          <property name="iconSize">
           <size>
@@ -108,35 +139,95 @@ border-bottom-right-radius: 30px;
        </item>
        <item>
         <widget class="QPushButton" name="btAccount">
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
          <property name="styleSheet">
           <string notr="true"/>
          </property>
          <property name="text">
-          <string>Account</string>
+          <string>   Account</string>
+         </property>
+         <property name="icon">
+          <iconset resource="image.qrc">
+           <normaloff>:/image/icon/image/icon/people-fill.svg</normaloff>:/image/icon/image/icon/people-fill.svg</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>20</width>
+           <height>20</height>
+          </size>
          </property>
         </widget>
        </item>
        <item>
         <widget class="QPushButton" name="btClass">
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
          <property name="text">
-          <string>Class</string>
+          <string>   Class</string>
+         </property>
+         <property name="icon">
+          <iconset resource="image.qrc">
+           <normaloff>:/image/icon/image/icon/stack.svg</normaloff>:/image/icon/image/icon/stack.svg</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>20</width>
+           <height>20</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label">
+         <property name="styleSheet">
+          <string notr="true">font: 100 12pt &quot;Roboto&quot;;
+color:#293169;</string>
+         </property>
+         <property name="text">
+          <string>System</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButton">
+         <property name="text">
+          <string>   Configuration</string>
+         </property>
+         <property name="icon">
+          <iconset resource="image.qrc">
+           <normaloff>:/image/icon/image/icon/gear-wide-connected.svg</normaloff>:/image/icon/image/icon/gear-wide-connected.svg</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>20</width>
+           <height>20</height>
+          </size>
          </property>
         </widget>
        </item>
        <item>
         <widget class="QPushButton" name="login">
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
          <property name="styleSheet">
           <string notr="true"/>
          </property>
          <property name="text">
-          <string>show login</string>
+          <string>Show login</string>
          </property>
         </widget>
        </item>
        <item>
         <widget class="QPushButton" name="btexit">
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
          <property name="styleSheet">
-          <string notr="true">background-color: rgb(85, 255, 255);</string>
+          <string notr="true"/>
          </property>
          <property name="text">
           <string>Exit</string>
@@ -144,6 +235,44 @@ border-bottom-right-radius: 30px;
         </widget>
        </item>
       </layout>
+     </widget>
+     <widget class="QLabel" name="label_3">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>30</y>
+        <width>181</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="image.qrc">:/image/logo/image/logo/schoolLogo.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_4">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>780</y>
+        <width>171</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="image.qrc">:/image/logo/image/logo/nea_yukLogo.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
      </widget>
     </widget>
     <widget class="QPushButton" name="btexit_main">
@@ -154,6 +283,9 @@ border-bottom-right-radius: 30px;
        <width>80</width>
        <height>22</height>
       </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
      </property>
      <property name="styleSheet">
       <string notr="true">color: rgb(170, 0, 0);</string>

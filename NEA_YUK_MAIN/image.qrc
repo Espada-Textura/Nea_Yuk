@@ -1,5 +1,17 @@
 <RCC>
     <qresource prefix="/image/icon">
         <file>image/icon/x-circle-fill.svg</file>
+        <file>image/icon/grid-1x2-fill.svg</file>
+        <file>image/icon/gear-wide-connected.svg</file>
+        <file>image/icon/credit-card-2-front-fill.svg</file>
+        <file>image/icon/calendar-check-fill.svg</file>
+        <file>image/icon/bookmark-star-fill.svg</file>
+        <file>image/icon/stack.svg</file>
+        <file>image/icon/people-fill.svg</file>
+    </qresource>
+    <qresource prefix="/image/logo">
+        <file>image/logo/SchoolLogo.svg</file>
+        <file>image/logo/schoolLogo.png</file>
+        <file>image/logo/nea_yukLogo.png</file>
     </qresource>
 </RCC>

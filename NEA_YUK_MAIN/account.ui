@@ -292,7 +292,7 @@ QTableView::item::hover
      </column>
     </widget>
    </widget>
-   <widget class="QFrame" name="frame">
+   <widget class="QFrame" name="frameDetail">
     <property name="geometry">
      <rect>
       <x>1300</x>
