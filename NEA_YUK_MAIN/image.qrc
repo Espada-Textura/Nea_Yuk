@@ -22,5 +22,8 @@
         <file>image/logo/SchoolLogo.svg</file>
         <file>image/logo/schoolLogo.png</file>
         <file>image/logo/nea_yukLogo.png</file>
+        <file>image/logo/Bug.png</file>
+        <file>image/logo/Login.png</file>
+        <file>image/logo/School Logo.png</file>
     </qresource>
 </RCC>

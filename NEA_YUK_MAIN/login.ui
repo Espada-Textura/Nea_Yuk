@@ -6,13 +6,271 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1022</width>
-    <height>553</height>
+    <width>1260</width>
+    <height>700</height>
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Dialog</string>
+   <string>Nea-Yuk</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">#login{
+border-image: url(:/loglog/Login.png);
+}</string>
+  </property>
+  <widget class="QWidget" name="school" native="true">
+   <property name="geometry">
+    <rect>
+     <x>830</x>
+     <y>30</y>
+     <width>296</width>
+     <height>262</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#school{
+	border-image: url(:/image/logo/image/logo/School Logo.png);
+}</string>
+   </property>
+  </widget>
+  <widget class="QGroupBox" name="loginbox">
+   <property name="geometry">
+    <rect>
+     <x>810</x>
+     <y>320</y>
+     <width>356</width>
+     <height>237</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#loginbox{
+border: transparent;
+}</string>
+   </property>
+   <property name="title">
+    <string/>
+   </property>
+   <widget class="QLabel" name="username">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>10</y>
+      <width>81</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Roboto</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>username</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="usernamebox">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>40</y>
+      <width>231</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>IBeamCursor</cursorShape>
+    </property>
+    <property name="acceptDrops">
+     <bool>true</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#usernamebox{
+border: 1px solid rgb(194, 223, 211);
+border-radius: 10px;
+color: #FFF;
+padding-left: 10px;
+padding-right: 10px;
+background-color: rgb(195, 224, 213);
+
+	color: rgb(0, 0, 0);
+}</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="passwrod">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>85</y>
+      <width>80</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Roboto</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>password</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="passbox">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>110</y>
+      <width>231</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#passbox{
+border:1px solid rgb(195, 224, 213);
+border-radius: 10px;
+color:FFF;
+padding-left: 10px;
+padding-right: 10px;
+background-color : rgb(195, 224, 213);
+	color: rgb(0, 0, 0);
+
+}</string>
+    </property>
+    <property name="echoMode">
+     <enum>QLineEdit::Password</enum>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="loginbutton">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>170</y>
+      <width>261</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Roboto</family>
+      <pointsize>12</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="mouseTracking">
+     <bool>true</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#loginbutton{
+border:1px solid rgb(195, 224, 213);
+border-radius: 10px;
+color:FFF;
+background-color:  rgb(65, 154, 118);
+}</string>
+    </property>
+    <property name="text">
+     <string>Log in</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QWidget" name="back" native="true">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1260</width>
+     <height>700</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#back{
+	border-image: url(:/image/logo/image/logo/Login.png);
+}
+
+</string>
+   </property>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>610</y>
+      <width>81</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Roboto</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string> Version 0.1.0</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>630</y>
+      <width>181</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Developed by Nea-Yuk SMS Team </string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>650</y>
+      <width>201</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Distributed by Brave Dragon Co,Ltd</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>660</y>
+      <width>271</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Need help? click here to read documentation</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="bug" native="true">
+    <property name="geometry">
+     <rect>
+      <x>620</x>
+      <y>640</y>
+      <width>31</width>
+      <height>36</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#bug{
+border-image: url(:/login/Login/Bug.png);
+}</string>
+    </property>
+   </widget>
+  </widget>
+  <zorder>back</zorder>
+  <zorder>school</zorder>
+  <zorder>loginbox</zorder>
  </widget>
  <resources/>
  <connections/>
