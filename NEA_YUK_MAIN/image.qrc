@@ -8,6 +8,7 @@
         <file>image/icon/bookmark-star-fill.svg</file>
         <file>image/icon/stack.svg</file>
         <file>image/icon/people-fill.svg</file>
+        <file>image/icon/search.svg</file>
     </qresource>
     <qresource prefix="/image/logo">
         <file>image/logo/SchoolLogo.svg</file>
