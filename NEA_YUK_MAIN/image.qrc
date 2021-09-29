@@ -9,6 +9,14 @@
         <file>image/icon/stack.svg</file>
         <file>image/icon/people-fill.svg</file>
         <file>image/icon/search.svg</file>
+        <file>image/icon/edit (1).svg</file>
+        <file>image/icon/Group 579.svg</file>
+        <file>image/icon/Group 580.svg</file>
+        <file>image/icon/Group 581.svg</file>
+        <file>image/icon/Rectangle 134.svg</file>
+        <file>image/icon/Rectangle 137.svg</file>
+        <file>image/icon/search (1).svg</file>
+        <file>image/icon/student.svg</file>
     </qresource>
     <qresource prefix="/image/logo">
         <file>image/logo/SchoolLogo.svg</file>

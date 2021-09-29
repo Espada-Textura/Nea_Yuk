@@ -15,6 +15,7 @@ public:
     explicit dashbaord(QWidget *parent = nullptr);
     ~dashbaord();
 
+
 private:
     Ui::dashbaord *ui;
 };
