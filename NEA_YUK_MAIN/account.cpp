@@ -22,14 +22,21 @@ account::~account()
     delete ui;
 }
 
-void account::on_pushButton_clicked()
-{
-    ui->frameDetail->move(450,70);
-}
-
 
 void account::on_pushButton_2_clicked()
 {
      ui->frameDetail->move(1340,70);
+}
+
+
+void account::on_pushButton_4_clicked()
+{
+     ui->frameDetail->move(450,70);
+}
+
+
+void account::on_pushButton_3_clicked()
+{
+    ui->frameDetail->move(450,70);
 }
 

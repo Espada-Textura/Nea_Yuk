@@ -17,6 +17,7 @@
         <file>image/icon/Rectangle 137.svg</file>
         <file>image/icon/search (1).svg</file>
         <file>image/icon/student.svg</file>
+        <file>image/icon/caret-down-fill.png</file>
     </qresource>
     <qresource prefix="/image/logo">
         <file>image/logo/SchoolLogo.svg</file>

@@ -21,18 +21,6 @@ public:
 
 private slots:
 
-    void on_btDashbaord_clicked();
-
-    void on_btAccount_clicked();
-
-    void on_btClass_clicked();
-
-    void on_login_clicked();
-
-    void on_btexit_clicked();
-
-    void on_btexit_main_clicked();
-
 private:
     Ui::MainWindow *ui;
     dashbaord * Dashbaord;
