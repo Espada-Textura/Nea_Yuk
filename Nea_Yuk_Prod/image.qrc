@@ -1,0 +1,28 @@
+<RCC>
+    <qresource prefix="/logo">
+        <file>image/bookmark-star-fill.svg</file>
+        <file>image/calendar-check-fill.svg</file>
+        <file>image/caret-down-fill.png</file>
+        <file>image/credit-card-2-front-fill.svg</file>
+        <file>image/edit (1).svg</file>
+        <file>image/gear-wide-connected.svg</file>
+        <file>image/grid-1x2-fill.svg</file>
+        <file>image/Group 579.svg</file>
+        <file>image/Group 580.svg</file>
+        <file>image/Group 581.svg</file>
+        <file>image/people-fill.svg</file>
+        <file>image/Rectangle 134.svg</file>
+        <file>image/Rectangle 137.svg</file>
+        <file>image/search (1).svg</file>
+        <file>image/search.svg</file>
+        <file>image/stack.svg</file>
+        <file>image/student.svg</file>
+        <file>image/x-circle-fill.svg</file>
+        <file>image/Bug.png</file>
+        <file>image/Login.png</file>
+        <file>image/nea_yukLogo.png</file>
+        <file>image/School Logo.png</file>
+        <file>image/schoolLogo.png</file>
+        <file>image/SchoolLogo.svg</file>
+    </qresource>
+</RCC>
