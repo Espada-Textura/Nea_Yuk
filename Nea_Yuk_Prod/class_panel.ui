@@ -76,6 +76,23 @@ font-size: 28px;</string>
       <string>Class</string>
      </property>
     </widget>
+    <widget class="QPushButton" name="pushButton_11">
+     <property name="geometry">
+      <rect>
+       <x>1160</x>
+       <y>10</y>
+       <width>121</width>
+       <height>36</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(65, 159, 122);
+font-size: 16px;</string>
+     </property>
+     <property name="text">
+      <string>Deatil show</string>
+     </property>
+    </widget>
    </widget>
    <widget class="QFrame" name="frame_main_panel">
     <property name="geometry">

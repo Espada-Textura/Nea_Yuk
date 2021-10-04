@@ -1,8 +1,10 @@
 #ifndef ACCOUNT_H
 #define ACCOUNT_H
 
-#include <QWidget>
 
+#include <QWidget>
+#include <account_detail.h>
+#include <account_edit.h>
 namespace Ui {
 class account;
 }
@@ -17,15 +19,14 @@ public:
 
 private slots:
 
+    void on_pushButton_16_clicked();
 
-    void on_pushButton_2_clicked();
-
-    void on_pushButton_4_clicked();
-
-    void on_pushButton_3_clicked();
+    void on_pushButton_15_clicked();
 
 private:
     Ui::account *ui;
+    account_detail * Account_Detail;
+    account_edit * Account_Edit;
 };
 
 #endif // ACCOUNT_H

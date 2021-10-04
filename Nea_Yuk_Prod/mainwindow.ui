@@ -62,6 +62,12 @@
        </property>
        <item row="0" column="0">
         <widget class="QFrame" name="side_bar_frame">
+         <property name="minimumSize">
+          <size>
+           <width>300</width>
+           <height>0</height>
+          </size>
+         </property>
          <property name="maximumSize">
           <size>
            <width>300</width>
@@ -70,6 +76,8 @@
          </property>
          <property name="styleSheet">
           <string notr="true">background-color: rgb(255, 255, 255);
+border-bottom-right-radius: 30px;
+    border-top-right-radius: 30px;
 QPushButton{
     background-color: #fff;
 	text-align: left;
@@ -329,6 +337,9 @@ color:#293169;</string>
        </item>
        <item row="0" column="1">
         <widget class="QFrame" name="frame_3">
+         <property name="styleSheet">
+          <string notr="true">border-radius: 0;</string>
+         </property>
          <property name="frameShape">
           <enum>QFrame::StyledPanel</enum>
          </property>

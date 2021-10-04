@@ -12,9 +12,8 @@ account::account(QWidget *parent) :
     effect_1->setXOffset(0);
     effect_1->setYOffset(0);
     effect_1->setColor(QColor(00, 00, 00, 50));
-    ui->textEdit->setGraphicsEffect(effect_1);
-    ui->frameDetail->setGraphicsEffect(effect_1);
-
+    Account_Detail = new account_detail(this);
+    Account_Edit = new account_edit(this);
 }
 
 account::~account()
@@ -23,20 +22,14 @@ account::~account()
 }
 
 
-void account::on_pushButton_2_clicked()
+void account::on_pushButton_16_clicked()
 {
-     ui->frameDetail->move(1340,70);
+    Account_Detail->exec();
 }
 
 
-void account::on_pushButton_4_clicked()
+void account::on_pushButton_15_clicked()
 {
-     ui->frameDetail->move(450,70);
-}
-
-
-void account::on_pushButton_3_clicked()
-{
-    ui->frameDetail->move(450,70);
+    Account_Edit->exec();
 }
 
