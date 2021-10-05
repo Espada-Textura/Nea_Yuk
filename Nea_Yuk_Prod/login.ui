@@ -15,7 +15,7 @@
   </property>
   <property name="styleSheet">
    <string notr="true">#login{
-border-image: url(:/loglog/Login.png);
+	border-image: url(:/logo/image/Login.png);
 }</string>
   </property>
   <widget class="QWidget" name="school" native="true">
@@ -29,7 +29,10 @@ border-image: url(:/loglog/Login.png);
    </property>
    <property name="styleSheet">
     <string notr="true">#school{
-	border-image: url(:/image/logo/image/logo/School Logo.png);
+
+	border-image: url(:/logo/image/School Logo.png);
+background : transparent;
+border: transparent;
 }</string>
    </property>
   </widget>
@@ -44,6 +47,7 @@ border-image: url(:/loglog/Login.png);
    </property>
    <property name="styleSheet">
     <string notr="true">#loginbox{
+background : transparent;
 border: transparent;
 }</string>
    </property>
@@ -64,6 +68,10 @@ border: transparent;
       <family>Roboto</family>
       <pointsize>12</pointsize>
      </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background : transparent;
+border: transparent;</string>
     </property>
     <property name="text">
      <string>username</string>
@@ -111,6 +119,10 @@ background-color: rgb(195, 224, 213);
       <family>Roboto</family>
       <pointsize>12</pointsize>
      </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background : transparent;
+border: transparent;</string>
     </property>
     <property name="text">
      <string>password</string>
@@ -188,7 +200,7 @@ background-color:  rgb(65, 154, 118);
    </property>
    <property name="styleSheet">
     <string notr="true">#back{
-	border-image: url(:/image/logo/image/logo/Login.png);
+background : transparent;
 }
 
 </string>
@@ -209,6 +221,10 @@ background-color:  rgb(65, 154, 118);
       <bold>true</bold>
      </font>
     </property>
+    <property name="styleSheet">
+     <string notr="true">background : transparent;
+border: transparent;</string>
+    </property>
     <property name="text">
      <string> Version 0.1.0</string>
     </property>
@@ -222,8 +238,12 @@ background-color:  rgb(65, 154, 118);
       <height>19</height>
      </rect>
     </property>
+    <property name="styleSheet">
+     <string notr="true">background : transparent;
+border: transparent;</string>
+    </property>
     <property name="text">
-     <string>Developed by Nea-Yuk SMS Team </string>
+     <string>Developed by Spirit Lion Team</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_3">
@@ -234,6 +254,10 @@ background-color:  rgb(65, 154, 118);
       <width>201</width>
       <height>19</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background : transparent;
+border: transparent;</string>
     </property>
     <property name="text">
      <string>Distributed by Brave Dragon Co,Ltd</string>
@@ -247,6 +271,10 @@ background-color:  rgb(65, 154, 118);
       <width>271</width>
       <height>19</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background : transparent;
+border: transparent;</string>
     </property>
     <property name="text">
      <string>Need help? click here to read documentation</string>
@@ -263,7 +291,9 @@ background-color:  rgb(65, 154, 118);
     </property>
     <property name="styleSheet">
      <string notr="true">#bug{
-border-image: url(:/login/Login/Bug.png);
+	border-image: url(:/logo/image/Bug.png);
+background : transparent;
+border: transparent;
 }</string>
     </property>
    </widget>
