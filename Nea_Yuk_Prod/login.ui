@@ -230,7 +230,7 @@ background : transparent;
 border: transparent;</string>
     </property>
     <property name="text">
-     <string> Version 0.1.0</string>
+     <string> Version 1.01</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_2">

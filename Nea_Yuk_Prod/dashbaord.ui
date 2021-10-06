@@ -3768,8 +3768,20 @@ font: 14pt &quot;Arial Rounded MT Bold&quot;;</string>
                 <widget class="QComboBox" name="comboBox_3">
                  <property name="styleSheet">
                   <string notr="true">color: #2B3572;
-font: 13pt &quot;Nunito&quot;;
-font: bold;</string>
+font: 10pt &quot;Nunito&quot;;
+font: bold;
+}
+QComboBox::drop-down 
+{
+    border: 0px; /* This seems to replace the whole arrow of the combo box */
+}
+
+/* Define a new custom arrow icon for the combo box */
+QComboBox::down-arrow {
+    
+	image: url(:/logo/image/caret-down-fill.png);
+    width: 20px;
+    height: 20px;</string>
                  </property>
                  <item>
                   <property name="text">
@@ -4977,8 +4989,20 @@ font: 14pt &quot;Arial Rounded MT Bold&quot;;</string>
                 <widget class="QComboBox" name="comboBox_4">
                  <property name="styleSheet">
                   <string notr="true">color: #2B3572;
-font: 13pt &quot;Nunito&quot;;
-font: bold;</string>
+font: 10pt &quot;Nunito&quot;;
+font: bold;
+}
+QComboBox::drop-down 
+{
+    border: 0px; /* This seems to replace the whole arrow of the combo box */
+}
+
+/* Define a new custom arrow icon for the combo box */
+QComboBox::down-arrow {
+    
+	image: url(:/logo/image/caret-down-fill.png);
+    width: 20px;
+    height: 20px;</string>
                  </property>
                  <item>
                   <property name="text">
@@ -6375,7 +6399,7 @@ QComboBox::down-arrow {
                  <x>0</x>
                  <y>0</y>
                  <width>1350</width>
-                 <height>16</height>
+                 <height>25</height>
                 </rect>
                </property>
                <layout class="QGridLayout" name="gridLayout_158">
