@@ -51,7 +51,7 @@ void MainWindow::on_btClass_clicked()
 
 void MainWindow::on_login_clicked()
 {
-    Login->show();
+    Login->exec();
 }
 
 

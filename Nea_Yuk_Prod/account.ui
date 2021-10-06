@@ -870,7 +870,12 @@ QComboBox::down-arrow:on { /* shift the arrow when popup is open */
 font: 14pt &quot;Roboto&quot;;
 color: rgb(43, 53, 114);
 border: 1px solid gray;
+padding-left:10px;
+padding-right:10px;
 </string>
+                         </property>
+                         <property name="placeholderText">
+                          <string>Search...</string>
                          </property>
                         </widget>
                        </item>
@@ -1009,6 +1014,11 @@ QTableView::item::hover
                          </row>
                          <row>
                           <property name="text">
+                           <string>9</string>
+                          </property>
+                         </row>
+                         <row>
+                          <property name="text">
                            <string>10</string>
                           </property>
                          </row>
@@ -1029,7 +1039,37 @@ QTableView::item::hover
                          </row>
                          <row>
                           <property name="text">
+                           <string>14</string>
+                          </property>
+                         </row>
+                         <row>
+                          <property name="text">
                            <string>15</string>
+                          </property>
+                         </row>
+                         <row>
+                          <property name="text">
+                           <string>16</string>
+                          </property>
+                         </row>
+                         <row>
+                          <property name="text">
+                           <string>17</string>
+                          </property>
+                         </row>
+                         <row>
+                          <property name="text">
+                           <string>18</string>
+                          </property>
+                         </row>
+                         <row>
+                          <property name="text">
+                           <string>19</string>
+                          </property>
+                         </row>
+                         <row>
+                          <property name="text">
+                           <string>20</string>
                           </property>
                          </row>
                          <column>

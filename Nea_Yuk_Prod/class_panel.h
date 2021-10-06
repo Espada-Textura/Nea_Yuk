@@ -3,6 +3,7 @@
 
 #include <QWidget>
 #include "class_panel_detail.h"
+#include "class_panel_create.h"
 
 namespace Ui {
 class class_panel;
@@ -17,11 +18,15 @@ public:
     ~class_panel();
 
 private slots:
-    void on_pushButton_11_clicked();
+
+    void on_push_button_detail_clicked();
+
+    void on_psuh_button_create_clicked();
 
 private:
     Ui::class_panel *ui;
     class_panel_detail * Class_Panel_Detail;
+    class_panel_create * Class_Panel_Create;
 };
 
 #endif // CLASS_PANEL_H

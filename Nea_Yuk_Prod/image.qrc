@@ -48,5 +48,6 @@
         <file>image/task.png</file>
         <file>image/university (1).png</file>
         <file>image/edit (1).png</file>
+        <file>image/loginLOGO.png</file>
     </qresource>
 </RCC>

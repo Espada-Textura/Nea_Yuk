@@ -5583,7 +5583,10 @@ background-color: white;</string>
 color: rgb(43, 53, 114);</string>
               </property>
               <property name="text">
-               <string>Search</string>
+               <string/>
+              </property>
+              <property name="placeholderText">
+               <string>Search...</string>
               </property>
              </widget>
             </item>
@@ -6372,7 +6375,7 @@ QComboBox::down-arrow {
                  <x>0</x>
                  <y>0</y>
                  <width>1350</width>
-                 <height>25</height>
+                 <height>16</height>
                 </rect>
                </property>
                <layout class="QGridLayout" name="gridLayout_158">
