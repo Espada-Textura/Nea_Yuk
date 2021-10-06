@@ -17,7 +17,11 @@
    </size>
   </property>
   <property name="windowTitle">
-   <string>MainWindow</string>
+   <string>Nea-Yuk</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="image.qrc">
+    <normaloff>:/logo/image/School Logo.png</normaloff>:/logo/image/School Logo.png</iconset>
   </property>
   <property name="styleSheet">
    <string notr="true">background-color:#eff8f7;</string>

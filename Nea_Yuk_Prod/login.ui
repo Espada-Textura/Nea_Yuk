@@ -13,6 +13,10 @@
   <property name="windowTitle">
    <string>Nea-Yuk</string>
   </property>
+  <property name="windowIcon">
+   <iconset resource="image.qrc">
+    <normaloff>:/logo/image/loginLOGO.png</normaloff>:/logo/image/loginLOGO.png</iconset>
+  </property>
   <property name="styleSheet">
    <string notr="true">#login{
 	border-image: url(:/logo/image/Login.png);
@@ -302,6 +306,8 @@ border: transparent;
   <zorder>school</zorder>
   <zorder>loginbox</zorder>
  </widget>
- <resources/>
+ <resources>
+  <include location="image.qrc"/>
+ </resources>
  <connections/>
 </ui>
