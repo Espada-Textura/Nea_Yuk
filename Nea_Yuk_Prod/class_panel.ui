@@ -876,7 +876,67 @@ QTableView::item::hover
        </row>
        <row>
         <property name="text">
+         <string>14</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
          <string>15</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>16</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>17</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>18</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>19</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>20</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>21</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>22</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>23</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>24</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>25</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>27</string>
         </property>
        </row>
        <column>

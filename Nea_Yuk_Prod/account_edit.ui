@@ -23,7 +23,7 @@
    </size>
   </property>
   <property name="windowTitle">
-   <string>Dialog</string>
+   <string>Account Detail</string>
   </property>
   <layout class="QGridLayout" name="gridLayout">
    <item row="0" column="0">
@@ -254,7 +254,7 @@ color: rgb(43, 53, 114);
 font-size: 28px;</string>
       </property>
       <property name="text">
-       <string>Edit</string>
+       <string>Detail</string>
       </property>
      </widget>
      <widget class="QLabel" name="main_titile_19">

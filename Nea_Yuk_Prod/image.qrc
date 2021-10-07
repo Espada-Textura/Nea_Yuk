@@ -49,5 +49,6 @@
         <file>image/university (1).png</file>
         <file>image/edit (1).png</file>
         <file>image/loginLOGO.png</file>
+        <file>image/next.png</file>
     </qresource>
 </RCC>
