@@ -135,7 +135,7 @@ QPushButton:pressed {
             <property name="frameShadow">
              <enum>QFrame::Raised</enum>
             </property>
-            <layout class="QVBoxLayout" name="verticalLayout" stretch="0,0,0,0,0,0,0,0">
+            <layout class="QVBoxLayout" name="verticalLayout" stretch="0,0,0,0,0,0,0,0,0">
              <item>
               <widget class="QLabel" name="lableInformation">
                <property name="maximumSize">
@@ -273,6 +273,13 @@ color:#293169;</string>
               </widget>
              </item>
              <item>
+              <widget class="QPushButton" name="pushButton_2">
+               <property name="text">
+                <string>Show loginW</string>
+               </property>
+              </widget>
+             </item>
+             <item>
               <widget class="QPushButton" name="btexit">
                <property name="cursor">
                 <cursorShape>PointingHandCursor</cursorShape>
@@ -315,6 +322,16 @@ color:#293169;</string>
             <property name="frameShadow">
              <enum>QFrame::Raised</enum>
             </property>
+            <widget class="QTableView" name="tableView">
+             <property name="geometry">
+              <rect>
+               <x>20</x>
+               <y>30</y>
+               <width>256</width>
+               <height>192</height>
+              </rect>
+             </property>
+            </widget>
            </widget>
           </item>
           <item row="3" column="0">

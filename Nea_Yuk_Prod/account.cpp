@@ -2,6 +2,7 @@
 #include "ui_account.h"
 #include <QGraphicsDropShadowEffect>
 
+
 account::account(QWidget *parent) :
     QWidget(parent),
     ui(new Ui::account)

@@ -5,6 +5,7 @@
 #include <QWidget>
 #include <account_detail.h>
 #include <account_edit.h>
+#include "login.h"
 namespace Ui {
 class account;
 }

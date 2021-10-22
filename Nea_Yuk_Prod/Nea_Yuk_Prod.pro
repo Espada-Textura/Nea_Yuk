@@ -1,4 +1,4 @@
-QT       += core gui
+QT       += core gui sql
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -17,6 +17,7 @@ SOURCES += \
     class_panel_detail.cpp \
     dashbaord.cpp \
     login.cpp \
+    loginw.cpp \
     main.cpp \
     mainwindow.cpp
 
@@ -29,6 +30,7 @@ HEADERS += \
     class_panel_detail.h \
     dashbaord.h \
     login.h \
+    loginw.h \
     mainwindow.h
 
 FORMS += \
@@ -40,6 +42,7 @@ FORMS += \
     class_panel_detail.ui \
     dashbaord.ui \
     login.ui \
+    loginw.ui \
     mainwindow.ui
 
 # Default rules for deployment.
