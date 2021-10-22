@@ -196,8 +196,8 @@ background-color:  rgb(65, 154, 118);
   <widget class="QWidget" name="back" native="true">
    <property name="geometry">
     <rect>
-     <x>0</x>
-     <y>0</y>
+     <x>50</x>
+     <y>80</y>
      <width>1260</width>
      <height>700</height>
     </rect>
@@ -288,7 +288,7 @@ border: transparent;</string>
     <property name="geometry">
      <rect>
       <x>620</x>
-      <y>640</y>
+      <y>500</y>
       <width>31</width>
       <height>36</height>
      </rect>

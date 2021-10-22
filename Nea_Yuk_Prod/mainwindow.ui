@@ -21,7 +21,7 @@
   </property>
   <property name="windowIcon">
    <iconset resource="image.qrc">
-    <normaloff>:/logo/image/School Logo.png</normaloff>:/logo/image/School Logo.png</iconset>
+    <normaloff>:/logo/image/NeaYukLogo.png</normaloff>:/logo/image/NeaYukLogo.png</iconset>
   </property>
   <property name="styleSheet">
    <string notr="true">background-color:#eff8f7;</string>

@@ -50,5 +50,7 @@
         <file>image/edit (1).png</file>
         <file>image/loginLOGO.png</file>
         <file>image/next.png</file>
+        <file>image/loginFull.png</file>
+        <file>image/NeaYukLogo.png</file>
     </qresource>
 </RCC>
