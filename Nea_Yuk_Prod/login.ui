@@ -40,159 +40,6 @@ border: transparent;
 }</string>
    </property>
   </widget>
-  <widget class="QGroupBox" name="loginbox">
-   <property name="geometry">
-    <rect>
-     <x>810</x>
-     <y>320</y>
-     <width>356</width>
-     <height>237</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">#loginbox{
-background : transparent;
-border: transparent;
-}</string>
-   </property>
-   <property name="title">
-    <string/>
-   </property>
-   <widget class="QLabel" name="username">
-    <property name="geometry">
-     <rect>
-      <x>60</x>
-      <y>10</y>
-      <width>81</width>
-      <height>19</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <family>Roboto</family>
-      <pointsize>12</pointsize>
-     </font>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background : transparent;
-border: transparent;</string>
-    </property>
-    <property name="text">
-     <string>username</string>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="usernamebox">
-    <property name="geometry">
-     <rect>
-      <x>60</x>
-      <y>40</y>
-      <width>231</width>
-      <height>40</height>
-     </rect>
-    </property>
-    <property name="cursor">
-     <cursorShape>IBeamCursor</cursorShape>
-    </property>
-    <property name="acceptDrops">
-     <bool>true</bool>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">#usernamebox{
-border: 1px solid rgb(194, 223, 211);
-border-radius: 10px;
-color: #FFF;
-padding-left: 10px;
-padding-right: 10px;
-background-color: rgb(195, 224, 213);
-
-	color: rgb(0, 0, 0);
-}</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="passwrod">
-    <property name="geometry">
-     <rect>
-      <x>60</x>
-      <y>85</y>
-      <width>80</width>
-      <height>19</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <family>Roboto</family>
-      <pointsize>12</pointsize>
-     </font>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background : transparent;
-border: transparent;</string>
-    </property>
-    <property name="text">
-     <string>password</string>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="passbox">
-    <property name="geometry">
-     <rect>
-      <x>60</x>
-      <y>110</y>
-      <width>231</width>
-      <height>40</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">#passbox{
-border:1px solid rgb(195, 224, 213);
-border-radius: 10px;
-color:FFF;
-padding-left: 10px;
-padding-right: 10px;
-background-color : rgb(195, 224, 213);
-	color: rgb(0, 0, 0);
-
-}</string>
-    </property>
-    <property name="echoMode">
-     <enum>QLineEdit::Password</enum>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="loginbutton">
-    <property name="geometry">
-     <rect>
-      <x>60</x>
-      <y>170</y>
-      <width>231</width>
-      <height>50</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <family>Roboto</family>
-      <pointsize>12</pointsize>
-      <weight>75</weight>
-      <bold>true</bold>
-     </font>
-    </property>
-    <property name="cursor">
-     <cursorShape>PointingHandCursor</cursorShape>
-    </property>
-    <property name="mouseTracking">
-     <bool>true</bool>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">#loginbutton{
-border:1px solid rgb(195, 224, 213);
-border-radius: 10px;
-color:FFF;
-background-color:  rgb(65, 154, 118);
-}</string>
-    </property>
-    <property name="text">
-     <string>Log in</string>
-    </property>
-   </widget>
-  </widget>
   <widget class="QWidget" name="back" native="true">
    <property name="geometry">
     <rect>
@@ -212,8 +59,8 @@ background : transparent;
    <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
-      <x>20</x>
-      <y>610</y>
+      <x>10</x>
+      <y>600</y>
       <width>81</width>
       <height>19</height>
      </rect>
@@ -287,8 +134,8 @@ border: transparent;</string>
    <widget class="QWidget" name="bug" native="true">
     <property name="geometry">
      <rect>
-      <x>620</x>
-      <y>500</y>
+      <x>590</x>
+      <y>580</y>
       <width>31</width>
       <height>36</height>
      </rect>
@@ -301,10 +148,186 @@ border: transparent;
 }</string>
     </property>
    </widget>
+   <widget class="QGroupBox" name="loginbox">
+    <property name="geometry">
+     <rect>
+      <x>740</x>
+      <y>240</y>
+      <width>356</width>
+      <height>301</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#loginbox{
+background : transparent;
+border: transparent;
+}</string>
+    </property>
+    <property name="title">
+     <string/>
+    </property>
+    <widget class="QLabel" name="username">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>10</y>
+       <width>81</width>
+       <height>19</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Roboto</family>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background : transparent;
+border: transparent;</string>
+     </property>
+     <property name="text">
+      <string>username</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="usernamebox">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>40</y>
+       <width>231</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>IBeamCursor</cursorShape>
+     </property>
+     <property name="acceptDrops">
+      <bool>true</bool>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#usernamebox{
+border: 1px solid rgb(194, 223, 211);
+border-radius: 10px;
+color: #FFF;
+padding-left: 10px;
+padding-right: 10px;
+background-color: rgb(195, 224, 213);
+
+	color: rgb(0, 0, 0);
+}</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="passwrod">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>85</y>
+       <width>80</width>
+       <height>19</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Roboto</family>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background : transparent;
+border: transparent;</string>
+     </property>
+     <property name="text">
+      <string>password</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="passbox">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>110</y>
+       <width>231</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#passbox{
+border:1px solid rgb(195, 224, 213);
+border-radius: 10px;
+color:FFF;
+padding-left: 10px;
+padding-right: 10px;
+background-color : rgb(195, 224, 213);
+	color: rgb(0, 0, 0);
+
+}</string>
+     </property>
+     <property name="echoMode">
+      <enum>QLineEdit::Password</enum>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="loginbutton">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>200</y>
+       <width>231</width>
+       <height>50</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Roboto</family>
+       <pointsize>12</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="mouseTracking">
+      <bool>true</bool>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#loginbutton{
+border:1px solid rgb(195, 224, 213);
+border-radius: 10px;
+color:FFF;
+background-color:  rgb(65, 154, 118);
+}</string>
+     </property>
+     <property name="text">
+      <string>Log in</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="ErrorM">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>160</y>
+       <width>411</width>
+       <height>19</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Roboto</family>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background : transparent;
+border: transparent;
+color: rgb(195, 0, 0);</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </widget>
   </widget>
   <zorder>back</zorder>
   <zorder>school</zorder>
-  <zorder>loginbox</zorder>
  </widget>
  <resources>
   <include location="image.qrc"/>

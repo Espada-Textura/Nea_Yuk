@@ -36,6 +36,10 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
+void MainWindow::setUserID(QString id){
+    this->userID = id;
+}
+
 
 void MainWindow::on_btAccount_clicked()
 {

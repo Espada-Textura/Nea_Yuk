@@ -24,6 +24,7 @@ public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
     QSqlQueryModel *mModel;
+    void setUserID(QString id);
 
 private slots:
     void on_btAccount_clicked();
@@ -45,5 +46,6 @@ private:
     class_panel * Class_panel;
     login * Login;
     loginW * LoginW;
+    QString userID = "";
 };
 #endif // MAINWINDOW_H
