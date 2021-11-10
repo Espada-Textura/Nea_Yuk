@@ -19,7 +19,8 @@ SOURCES += \
     login.cpp \
     loginw.cpp \
     main.cpp \
-    mainwindow.cpp
+    mainwindow.cpp \
+    stuedent.cpp
 
 HEADERS += \
     account.h \
@@ -31,7 +32,8 @@ HEADERS += \
     dashbaord.h \
     login.h \
     loginw.h \
-    mainwindow.h
+    mainwindow.h \
+    stuedent.h
 
 FORMS += \
     account.ui \

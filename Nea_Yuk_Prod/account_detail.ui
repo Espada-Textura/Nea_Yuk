@@ -160,7 +160,7 @@ font: 8pt &quot;Roboto&quot;;</string>
         </widget>
        </item>
        <item row="6" column="1">
-        <widget class="QPlainTextEdit" name="plainTextEdit">
+        <widget class="QPlainTextEdit" name="document">
          <property name="styleSheet">
           <string notr="true">border-radius:10px;
 font: 14pt &quot;Roboto&quot;;
@@ -170,7 +170,7 @@ color: rgb(43, 53, 114);
         </widget>
        </item>
        <item row="0" column="1">
-        <widget class="QLineEdit" name="lineEdit_2">
+        <widget class="QLineEdit" name="first_name">
          <property name="styleSheet">
           <string notr="true">border-radius:10px;
 font: 14pt &quot;Roboto&quot;;
@@ -180,7 +180,7 @@ color: rgb(43, 53, 114);
         </widget>
        </item>
        <item row="1" column="1">
-        <widget class="QLineEdit" name="lineEdit_3">
+        <widget class="QLineEdit" name="last_name">
          <property name="styleSheet">
           <string notr="true">border-radius:10px;
 font: 14pt &quot;Roboto&quot;;
@@ -190,7 +190,7 @@ color: rgb(43, 53, 114);
         </widget>
        </item>
        <item row="2" column="1">
-        <widget class="QLineEdit" name="lineEdit_5">
+        <widget class="QLineEdit" name="date_of_birth">
          <property name="styleSheet">
           <string notr="true">border-radius:10px;
 font: 14pt &quot;Roboto&quot;;
@@ -200,7 +200,7 @@ color: rgb(43, 53, 114);
         </widget>
        </item>
        <item row="3" column="1">
-        <widget class="QLineEdit" name="lineEdit_6">
+        <widget class="QLineEdit" name="gender">
          <property name="styleSheet">
           <string notr="true">border-radius:10px;
 font: 14pt &quot;Roboto&quot;;
@@ -210,7 +210,7 @@ color: rgb(43, 53, 114);
         </widget>
        </item>
        <item row="4" column="1">
-        <widget class="QLineEdit" name="lineEdit_7">
+        <widget class="QLineEdit" name="phone">
          <property name="styleSheet">
           <string notr="true">border-radius:10px;
 font: 14pt &quot;Roboto&quot;;
@@ -220,7 +220,7 @@ color: rgb(43, 53, 114);
         </widget>
        </item>
        <item row="5" column="1">
-        <widget class="QLineEdit" name="lineEdit_4">
+        <widget class="QLineEdit" name="email">
          <property name="styleSheet">
           <string notr="true">border-radius:10px;
 font: 14pt &quot;Roboto&quot;;
@@ -260,8 +260,8 @@ font-size: 28px;</string>
      <widget class="QLabel" name="main_titile_19">
       <property name="geometry">
        <rect>
-        <x>30</x>
-        <y>80</y>
+        <x>80</x>
+        <y>90</y>
         <width>181</width>
         <height>31</height>
        </rect>
@@ -280,7 +280,7 @@ font-size: 28px;</string>
 font-size: 22px;</string>
       </property>
       <property name="text">
-       <string>ID #000000</string>
+       <string>0000</string>
       </property>
      </widget>
      <widget class="QLabel" name="main_titile_20">
@@ -327,7 +327,7 @@ font: 12pt &quot;Roboto&quot;;
 border-radius:10px;</string>
       </property>
       <property name="text">
-       <string>Save</string>
+       <string>Save Edit</string>
       </property>
      </widget>
      <widget class="QPushButton" name="pushButton_19">
@@ -399,7 +399,7 @@ font: 8pt &quot;Roboto&quot;;</string>
         </spacer>
        </item>
        <item row="3" column="1">
-        <widget class="QLineEdit" name="lineEdit_15">
+        <widget class="QLineEdit" name="faclty">
          <property name="styleSheet">
           <string notr="true">border-radius:10px;
 font: 14pt &quot;Roboto&quot;;
@@ -461,7 +461,7 @@ color: rgb(43, 53, 114);
         </widget>
        </item>
        <item row="4" column="1">
-        <widget class="QLineEdit" name="lineEdit_16">
+        <widget class="QLineEdit" name="department">
          <property name="styleSheet">
           <string notr="true">border-radius:10px;
 font: 14pt &quot;Roboto&quot;;
@@ -471,7 +471,7 @@ color: rgb(43, 53, 114);
         </widget>
        </item>
        <item row="5" column="1">
-        <widget class="QLineEdit" name="lineEdit_18">
+        <widget class="QLineEdit" name="subject">
          <property name="styleSheet">
           <string notr="true">border-radius:10px;
 font: 14pt &quot;Roboto&quot;;
@@ -515,6 +515,64 @@ font: 8pt &quot;Roboto&quot;;</string>
        </item>
       </layout>
      </widget>
+     <widget class="QLabel" name="main_titile_21">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>90</y>
+        <width>101</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Roboto</family>
+        <pointsize>-1</pointsize>
+        <weight>50</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(43, 53, 114);
+font-size: 22px;</string>
+      </property>
+      <property name="text">
+       <string>ID #</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_20">
+      <property name="geometry">
+       <rect>
+        <x>690</x>
+        <y>220</y>
+        <width>141</width>
+        <height>33</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(196, 35, 66, 255), stop:1 rgba(145, 46, 64, 255));
+color:#fff;
+font: 12pt &quot;Roboto&quot;;
+border-radius:10px;</string>
+      </property>
+      <property name="text">
+       <string>Delete</string>
+      </property>
+     </widget>
+     <zorder>pushButton_17</zorder>
+     <zorder>gridLayoutWidget_2</zorder>
+     <zorder>main_titile_18</zorder>
+     <zorder>main_titile_20</zorder>
+     <zorder>pushButton_18</zorder>
+     <zorder>pushButton_19</zorder>
+     <zorder>gridLayoutWidget_3</zorder>
+     <zorder>main_titile_21</zorder>
+     <zorder>main_titile_19</zorder>
+     <zorder>pushButton_20</zorder>
     </widget>
    </item>
   </layout>

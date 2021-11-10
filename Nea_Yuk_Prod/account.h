@@ -6,6 +6,11 @@
 #include <account_detail.h>
 #include <account_edit.h>
 #include "login.h"
+#include <QtSql>
+#include <QSqlDatabase>
+#include <QSqlQuery>
+#include <QMessageBox>
+#include <QString>
 namespace Ui {
 class account;
 }
@@ -17,12 +22,17 @@ class account : public QWidget
 public:
     explicit account(QWidget *parent = nullptr);
     ~account();
-
+    void setValueInTable();
+    QSqlQueryModel *mModel;
 private slots:
 
     void on_pushButton_16_clicked();
 
     void on_pushButton_15_clicked();
+
+
+
+    void on_pushButton_14_clicked();
 
 private:
     Ui::account *ui;

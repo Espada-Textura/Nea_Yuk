@@ -23,6 +23,7 @@ class MainWindow : public QMainWindow
 public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
+    QSqlDatabase db;
     QSqlQueryModel *mModel;
     void setUserID(QString id);
 
@@ -44,8 +45,6 @@ private:
     dashbaord * Dashbaord;
     account * Account;
     class_panel * Class_panel;
-    login * Login;
-    loginW * LoginW;
     QString userID = "";
 };
 #endif // MAINWINDOW_H
