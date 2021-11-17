@@ -17,6 +17,7 @@ MainWindow::MainWindow(QWidget *parent)
     Class_panel = new class_panel(this);
     Class_panel->hide();
     Account = new account(this);
+    Account->getData("student","");
     Account->hide();
     Dashbaord = new dashbaord(this);
     ui->main_layout->addWidget(Dashbaord);

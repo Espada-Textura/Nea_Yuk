@@ -14,7 +14,6 @@
 namespace Ui {
 class account;
 }
-
 class account : public QWidget
 {
     Q_OBJECT
@@ -24,20 +23,24 @@ public:
     ~account();
     void setValueInTable();
     QSqlQueryModel *mModel;
+    void getData(QString type,QString search);
 private slots:
 
     void on_pushButton_16_clicked();
-
     void on_pushButton_15_clicked();
-
-
-
     void on_pushButton_14_clicked();
+
+    void on_comboBox_Account_Type_6_currentTextChanged(const QString &arg1);
+
+    void on_lineEdit_textChanged(const QString &arg1);
+
 
 private:
     Ui::account *ui;
     account_detail * Account_Detail;
     account_edit * Account_Edit;
+    int total_users = 0;
+    QString type = "";
 };
 
 #endif // ACCOUNT_H
