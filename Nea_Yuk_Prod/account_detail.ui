@@ -236,7 +236,7 @@ color: rgb(43, 53, 114);
        <rect>
         <x>30</x>
         <y>30</y>
-        <width>841</width>
+        <width>261</width>
         <height>31</height>
        </rect>
       </property>
@@ -251,7 +251,7 @@ color: rgb(43, 53, 114);
       </property>
       <property name="styleSheet">
        <string notr="true">color: rgb(43, 53, 114);
-font-size: 8px;</string>
+font-size: 28px;</string>
       </property>
       <property name="text">
        <string>Detail</string>

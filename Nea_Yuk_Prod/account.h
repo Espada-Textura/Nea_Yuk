@@ -24,8 +24,8 @@ public:
     void setValueInTable();
     QSqlQueryModel *mModel;
     void getData(QString type,QString search);
-private slots:
 
+private slots:
     void on_pushButton_16_clicked();
     void on_pushButton_15_clicked();
     void on_pushButton_14_clicked();

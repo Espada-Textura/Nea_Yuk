@@ -15,7 +15,7 @@ account::account(QWidget *parent) :
     effect_1->setYOffset(0);
     effect_1->setColor(QColor(00, 00, 00, 50));
 
-    Account_Edit = new account_edit(this);
+
 
 }
 
@@ -35,9 +35,10 @@ void account::on_pushButton_16_clicked()
         int id = 0;
         id = ui->table->currentRow();
         QString data = ui->table->item(id,0)->text();
+//        int Id = ui->table->item(id,0)->text().toInt();
+//        int maxId = ui->table->item(total_users-1,0)->text().toInt();
         Account_Detail = new account_detail(this);
-
-//        Account_Detail->setParent(this);
+        Account_Detail->setParent(this);
         Account_Detail->setType(this->type);
         Account_Detail->setID(data);
         Account_Detail->exec();
@@ -48,6 +49,9 @@ void account::on_pushButton_16_clicked()
 
 void account::on_pushButton_15_clicked()
 {
+    Account_Edit = new account_edit(this);
+    Account_Edit->setType(this->ui->comboBox_Account_Type_6->currentText());
+    Account_Edit->setParent(this);
     Account_Edit->exec();
 }
 

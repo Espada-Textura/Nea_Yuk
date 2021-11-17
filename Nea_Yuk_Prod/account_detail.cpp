@@ -1,5 +1,6 @@
 #include "account_detail.h"
 #include "ui_account_detail.h"
+#include "account.h"
 account_detail::account_detail(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::account_detail)
@@ -12,9 +13,9 @@ account_detail::~account_detail()
     delete ui;
 }
 
-//void account_detail::setParent(account *acc){
-//    this->acc = acc;
-//}
+void account_detail::setParent(account *acc){
+    this->acc = acc;
+}
 
 void account_detail::on_pushButton_17_clicked()
 {
@@ -32,7 +33,6 @@ void account_detail::setID(QString id){
         ui->main_titile_19->setText(id);
         mModel = new QSqlQueryModel(this);
         QString loginQuery = "SELECT * FROM "+type+" WHERE id = "+this->id+";";
-
         mModel->setQuery(loginQuery);
         ui->first_name->setText(mModel->record(0).value("first_name").toString());
         ui->last_name->setText(mModel->record(0).value("last_name").toString());
@@ -44,24 +44,20 @@ void account_detail::setID(QString id){
         ui->department->setText(mModel->record(0).value("department").toString());
         ui->subject->setText(mModel->record(0).value("subject").toString());
         this->status = mModel->record(0).value("status").toString();
+        if(this->status == "0"){
+            ui->pushButton_19->setText("Enable account");
+            ui->pushButton_19->setStyleSheet(this->enableStyle);
+        }
     }
-}
-
-void account_detail::on_pushButton_18_clicked()
-{
-//    mModel = new QSqlQueryModel(this);
-//    QString loginQuery = "INSERT INTO `teacher` (`first_name`, `last_name`, `date_of_birth`, `gender`, `document`, `status`, `faculty`, `department`, `subject`, `account`, `password`, `phone`, `email`, `image`, `create_date`) VALUES ('', 'misa', '2021-11-10', 'male', 'none', '1', 'E', 'IT', 'math', NULL, NULL, NULL, NULL, NULL, current_timestamp());";
-//    mModel->setQuery(loginQuery);
-//    ui->main_titile_18->setText("work" );
-    this->close();
 }
 
 
 void account_detail::on_pushButton_20_clicked()
 {
     mModel = new QSqlQueryModel(this);
-    QString loginQuery = "DELETE FROM `teacher` WHERE `teacher`.`id` = "+this->id+";";
+    QString loginQuery = "DELETE FROM `"+type+"` WHERE `"+type+"`.`id` = "+this->id+";";
     mModel->setQuery(loginQuery);
+    this->acc->getData(type,"");
     this->close();
 }
 
@@ -78,7 +74,20 @@ void account_detail::on_btn_save_clicked()
                     " `phone` = '"+ui->phone->text()+"',"
                     " `email` = '"+ui->email->text()+"' WHERE `"+type+"`.`id` = "+this->id+";";
     mModel->setQuery(Query);
-    ui->main_titile_18->setText(Query);
-//    this->close();
+    this->acc->getData(type,"");
+}
+
+
+void account_detail::on_pushButton_19_clicked()
+{
+    if(this->status != "0"){
+        ui->pushButton_19->setText("Enable account");
+        ui->pushButton_19->setStyleSheet(this->enableStyle);
+        this->status = "0";
+    }else{
+        ui->pushButton_19->setText("Disable account");
+        ui->pushButton_19->setStyleSheet(this->disableStyle);
+        this->status = "1";
+    }
 }
 
