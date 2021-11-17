@@ -20,9 +20,11 @@ MainWindow::MainWindow(QWidget *parent)
     Account->getData("student","");
     Account->hide();
     Dashbaord = new dashbaord(this);
+    Dashbaord->getData();
     ui->main_layout->addWidget(Dashbaord);
     ui->main_layout->addWidget(Account);
     ui->main_layout->addWidget(Class_panel);
+
 }
 
 MainWindow::~MainWindow()
@@ -40,9 +42,6 @@ void MainWindow::on_btAccount_clicked()
     Account->show();
     Class_panel->hide();
     Dashbaord->hide();
-    if(db.open()){
-
-    }
     mModel = new QSqlQueryModel(this);
     QString loginQuery = "SELECT * FROM `admin` WHERE `id` = "+this->userID+"";
     mModel->setQuery(loginQuery);
@@ -54,6 +53,7 @@ void MainWindow::on_btDashbaord_clicked()
 {
     Account->hide();
     Class_panel->hide();
+    Dashbaord->getData();
     Dashbaord->show();
 }
 

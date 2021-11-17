@@ -17,6 +17,7 @@ account::account(QWidget *parent) :
 
 
 
+
 }
 
 account::~account()
@@ -34,14 +35,14 @@ void account::on_pushButton_16_clicked()
     if(total_users != 0){
         int id = 0;
         id = ui->table->currentRow();
-        QString data = ui->table->item(id,0)->text();
-//        int Id = ui->table->item(id,0)->text().toInt();
-//        int maxId = ui->table->item(total_users-1,0)->text().toInt();
-        Account_Detail = new account_detail(this);
-        Account_Detail->setParent(this);
-        Account_Detail->setType(this->type);
-        Account_Detail->setID(data);
-        Account_Detail->exec();
+        if(id != -1){
+            QString data = ui->table->item(id,0)->text();
+            Account_Detail = new account_detail(this);
+            Account_Detail->setParent(this);
+            Account_Detail->setType(this->type);
+            Account_Detail->setID(data);
+            Account_Detail->exec();
+        }
     }
 
 }
@@ -60,7 +61,7 @@ void account::getData(QString type,QString search){
     for (int index = 0;index < ui->main_titile_15->text().toInt() ;index++ ) {
         ui->table->removeRow(0);
     }
-    QString where = "WHERE first_name LIKE '%"+search+"%' or last_name LIKE '%"+search+"%'or date_of_birth LIKE '%"+search+"%'";
+    QString where = "WHERE first_name LIKE '%"+search+"%' or last_name LIKE '%"+search+"%'or date_of_birth LIKE '%"+search+"%'or id LIKE '%"+search+"%'";
 //    type =ui->comboBox_Account_Type_6->currentText();
     QString Query = "SELECT id, first_name, last_name, date_of_birth, gender, phone, email, `status` FROM `"+type+"` "+where+";";
 
